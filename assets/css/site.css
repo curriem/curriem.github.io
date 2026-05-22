@@ -60,10 +60,10 @@ strong { color: var(--ink); font-weight: 600; }
 /* Hero */
 .hero { padding: 72px 0 56px; border-bottom: 1px solid var(--rule); }
 .hero-grid {
-  display: grid; grid-template-columns: 180px 1fr; gap: 36px; align-items: start;
+  display: grid; grid-template-columns: 200px 1fr; gap: 40px; align-items: center;
 }
 .hero img {
-  width: 180px; height: 180px; border-radius: 8px;
+  width: 200px; height: 200px; border-radius: 8px;
   object-fit: cover; object-position: center;
 }
 .hero h1 { font-size: 34px; margin: 0 0 6px; font-weight: 700; }
@@ -162,13 +162,12 @@ strong { color: var(--ink); font-weight: 600; }
 .posts .post-hook { font-size: 14px; color: var(--ink-soft); margin-top: 2px; }
 .see-all { display: inline-block; margin-top: 18px; font-size: 14px; }
 
-/* Outdoors strip */
-.outdoor-strip {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
-  margin-top: 12px;
-}
+/* Outdoors */
+.outdoor-strip { margin-top: 16px; }
 .outdoor-strip img {
-  width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 4px;
+  width: 100%; max-width: 380px;
+  aspect-ratio: 4 / 3; object-fit: cover;
+  border-radius: 6px;
 }
 .outdoors p { max-width: 60ch; }
 
