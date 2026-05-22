@@ -1,0 +1,19 @@
+---
+layout: default
+title: Writing
+permalink: /writing/
+---
+<main>
+  <section class="writing-page">
+    <h1>Writing</h1>
+    <ul class="posts">
+      {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+        {% if post.summary %}<p class="post-hook">{{ post.summary }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</main>

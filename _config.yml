@@ -1,0 +1,17 @@
+title: Miles H. Currie, PhD
+description: Satellite AI/ML Scientist at MyRadar — onboard ML, sensor and detector trade studies, and GEOINT for Earth observation.
+url: https://milescurrie.com
+
+permalink: /writing/:year/:title/
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - README.md
+  - README.txt
+  - LICENSE.txt
+  - preview.html
+  - Gemfile
+  - Gemfile.lock
+  - vendor

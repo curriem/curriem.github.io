@@ -1,425 +1,208 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Miles H. Currie, PhD</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+---
+layout: default
+---
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<main>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="content">
-							<div class="inner">
-								<h1>Dr. Miles Currie</h1>
+  <!-- HERO -->
+  <section class="hero" style="border-top: none;">
+    <div class="hero-grid">
+      <img src="/images/miles_v2.jpg" alt="Miles Currie" />
+      <div>
+        <h1>Miles H. Currie, PhD</h1>
+        <p class="role">Satellite AI/ML Scientist <span class="at">@ MyRadar</span></p>
+        <p class="bio">
+          I lead the development of <strong>AI and machine learning</strong> systems for satellite remote
+          sensing. My expertise includes onboard models for hazard detection on small satellites, sensor and
+          detector trade studies for new instrument concepts, and the calibration and retrieval pipelines that
+          turn multi- and hyperspectral imagery into operational <strong>GEOINT</strong> products. I trained as an astronomer;
+          I completed a PhD on the detectability of biosignatures on terrestrial exoplanets in 2024 and continue
+          to publish in this area occasionally.
+        </p>
+        <div class="links">
+          <a href="mailto:mileshcurrie@gmail.com">Email</a>
+          <a href="/images/cv.pdf">CV</a>
+          <a href="https://github.com/curriem">GitHub</a>
+          <a href="https://www.linkedin.com/in/miles-currie-phd">LinkedIn</a>
+          <a href="https://orcid.org/0000-0003-3429-4142">ORCID</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-								<img src="images/miles_v2.jpg" style="width:280px; height:280px; object-fit: cover;">
+  <!-- WORK -->
+  <section id="work">
+    <h2>Work — Earth Observation</h2>
+    <p class="work-lede">
+      At <strong>MyRadar</strong> I lead <strong>AI/ML</strong> development for onboard hazard detection on
+      multi- and hyperspectral satellite platforms; the work spans algorithm design, edge deployment on flight
+      hardware, and the calibration pipelines that make either feasible.
+    </p>
+    <ul class="work-bullets">
+      <li>
+        <strong>Onboard AI/ML for hyperspectral imaging</strong>
+        <span>Edge-deployed deep learning models for hazard alerting on small satellites, designed to run under the tight power and memory budgets where conventional inference pipelines are not feasible.</span>
+      </li>
+      <li>
+        <strong>Sensor and detector trade studies</strong>
+        <span>Instrument concept down-selects across spectral band, optical design, and radiation environment; turning physics-level constraints into design decisions that survive contact with flight hardware.</span>
+      </li>
+      <li>
+        <strong>Hazard domains</strong>
+        <span>Wildfires, volcanic activity, ash and dust particle transport and deposition, maritime hazards (oil spills, algal blooms, ship exhaust), and interplanetary space weather.</span>
+      </li>
+      <li>
+        <strong>Imagery pipelines</strong>
+        <span>Custom calibration, radiative transfer, synthetic data generation (DIRSIG, MODTRAN), and Bayesian fingerprinting across the UV, VIS, NIR, and SWIR.</span>
+      </li>
+    </ul>
+    <div class="tech-chips">
+      <span>Python</span><span>PyTorch</span><span>Computer vision</span><span>Hyperspectral</span>
+      <span>Bayesian inference</span><span>Radiative transfer</span><span>DIRSIG</span><span>MODTRAN</span>
+      <span>Edge compute</span><span>Cluster computing</span>
+    </div>
+    <p class="recognition">
+      <strong>Recognition:</strong>
+      USGIF Golden Ticket Award (GEOINT&nbsp;Symposium) ·
+      NASA Postdoctoral Program Prize Fellowship, 2024 ·
+      UW Department Prize for Outstanding Graduate Student Research, 2023
+    </p>
+  </section>
 
-								<p>NPP Fellow<br> NASA GSFC <br> mcurrie.astro [at] gmail.com </p>
-								<p><a href="images/cv.pdf" target="_blank">Curriculum Vitae</a></p>
-							</div>
-						</div>
-						<nav>
-							<ul>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="projects">
 
-								<li><a href="#research">Research</a></li>
-								<!--<li><a href="#community">Community</a></li>-->
-								<li><a href="#outdoors">Outdoors</a></li>
-								<!-- <li><a href="#contact">Contact</a></li>-->
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+      <article class="project">
+        <div class="project-head">
+          <h3>XPRIZE Wildfire</h3>
+          <div class="project-tags"><span>EO</span><span>Multi-sensor fusion</span><span>Field work</span></div>
+        </div>
+        <p>
+          I helped build and field MyRadar's entry to the XPRIZE Wildfire finals in New South Wales,
+          Australia — a near-real-time fire detection system that fuses imagery from a diverse constellation
+          of public satellites across LEO, SSO, and GEO. During the finals I embedded with the
+          <strong>NSW Rural Fire Service</strong> in the field, interfacing directly with fire managers and
+          frontline firefighters to ground-truth which satellite products are actually useful at the
+          incident-command level; I came away convinced that operational utility is dictated as much by
+          latency and product framing as by raw detection accuracy.
+        </p>
+      </article>
 
-				<!-- Main -->
-					<div id="main">
+      <article class="project">
+        <div class="project-head">
+          <h3>Hypersonic Plasma Characterization</h3>
+          <div class="project-tags"><span>AI/ML</span><span>SWIR</span><span>Remote sensing</span></div>
+        </div>
+        <p>
+          I applied a transfer-learning CNN to short-wave infrared imagery of a rocket launch to recover
+          flight state — altitude, Mach number, and slant range — from spectral and spatial plume features.
+          The study compares physics-motivated features against learned convolutional representations and uses
+          distance-invariant tests to disentangle genuine plume physics from trivial brightness scaling;
+          results are promising for this initial case, however, generalization across vehicles, atmospheric
+          conditions, and viewing geometries remains to be demonstrated, and I leave a multi-launch validation
+          to future work.
+        </p>
+      </article>
 
-						<!-- Research -->
-							<article id="research">
-								<h2 class="major">Research</h2>
-								<!-- <span class="image main"><img src="images/pic01.jpg" alt="" /></span> -->
+      <article class="project">
+        <div class="project-head">
+          <h3>Space Weather Monitoring</h3>
+          <div class="project-tags"><span>Hardware trades</span><span>Onboard AI/ML</span><span>NASA SBIR</span></div>
+        </div>
+        <p>
+          Mission-concept work, funded under a NASA SBIR, for a compact low-power smallsat platform performing
+          onboard space weather alerting. My contributions span analytic sensor and detector trade studies
+          across the proposed instrument suite, and onboard AI/ML pipelines for coronal mass ejection
+          detection, solar flare detection and localization, and short-horizon space weather forecasting.
+        </p>
+      </article>
 
-								<p><b>About me:</b> I am a NASA Postdoctoral Program Fellow at NASA's Goddard Space Flight Center. In 2024, I earned my dual-title PhD in Astronomy and Astrobiology at the University
-								of Washington, Seattle, where I worked with Prof. Vikki Meadows and the 
-							  <a href="https://depts.washington.edu/naivpl/content/welcome-virtual-planetary-laboratory"> Virtual Planetary Laboratory</a>
-								team. During graduate school, I worked to understand
-							  how we can use the upcoming extremely large telescopes to search for signs of habitability and life on terrestrial-sized
-								exoplanets in M-dwarf systems using high-resolution cross-correlation spectroscopy. 
-								At NASA, I work on current and future space-based direct imaging missions, studying how exozodiacal dust may impact our ability to characterize an Earth-like world in nearby FGK systems.
-                                </p>
-                                
-                                  
-								<p><b>Publications:</b> <a href="https://orcid.org/0000-0003-3429-4142"> Link to ORCID</a></p>
-								<p><b>Science highlights:</b></p>
+      <article class="project">
+        <div class="project-head">
+          <h3>Aerosol Plume Retrieval</h3>
+          <div class="project-tags"><span>Retrieval</span><span>Radiative transfer</span><span>Operational</span></div>
+        </div>
+        <p>
+          I developed a modular Python pipeline that ingests geostationary satellite imagery alongside
+          numerical weather fields to retrieve the height, mass, and particle-size distribution of ash and
+          aerosol plumes, and then propagates the resulting source term through an atmospheric dispersion
+          model to project downwind transport and ground deposition. The retrieval is optimal-estimation
+          against a radiative-transfer-derived radiance lookup table; the architecture is modular by design
+          so that individual stages may be swapped, re-trained, or run in isolation during operational
+          deployment.
+        </p>
+      </article>
 
+    </div>
+  </section>
 
-                                <span class="image main"><img src="images/dot_plot_12.0pc_ELT_transits_rv22.png" alt="" /></span>
-                                <p><b>We may be able to use the future ground-based extremely large telescopes to search for the CO2/CH4 biosignature disequilibrium pair on nearby transiting terrestrial exoplanets.</b>
-                                <br>
-                                <i>There's More to Life than O2: Simulating the Detectability of a Range of Molecules for Ground-based, High-resolution Spectroscopy of Transiting Terrestrial Exoplanets</i>
-                                <br>
-                                <a href="https://iopscience.iop.org/article/10.3847/PSJ/accf86"> Currie et al. 2023a</a></p>
+  <!-- RESEARCH -->
+  <section id="research">
+    <h2>Research — Astronomy</h2>
+    <p>
+      PhD in Astronomy and Astrobiology, University of Washington (2024), with the Virtual Planetary Laboratory.
+      Selected first- and co-first-author work follows; see ORCID for the full publication list.
+    </p>
+    <div class="papers">
 
-                                <hr>
-                                
-                                <span class="image main"><img src="images/disk_example.png" alt="" /></span>
-                                <p><b>Exozodiacal debris disks may impede our ability to detect Earth-like exoplanets in direct images. However, applying an optimized high-pass filter may allow us to fit and remove even the worst-case-scenario mean motion resonance structures.</b>
-                                <br>
-                                <i>Mitigating Worst-Case Exozodiacal Dust Structure in Direct Images of Earth-like Exoplanets</i>
-                                <br>                                                                                                                                                       
-                                <a href="https://iopscience.iop.org/article/10.3847/1538-3881/acfda7"> Currie et al. 2023b</a></p>
-                                <hr>
+      <div class="paper">
+        <img src="/images/dot_plot_12.0pc_ELT_transits_rv22.png" alt="" />
+        <div>
+          <h3>There's More to Life than O₂</h3>
+          <div class="meta">Currie et al. 2023a · <i>The Planetary Science Journal</i></div>
+          <p>We show that ground-based extremely large telescopes may be able to detect the CO₂/CH₄ biosignature disequilibrium pair on nearby transiting terrestrial exoplanets in M-dwarf systems, with required integration times ranging from tens to hundreds of transit hours depending on the target and molecule. <a href="https://iopscience.iop.org/article/10.3847/PSJ/accf86">Paper →</a></p>
+        </div>
+      </div>
 
-                                <span class="image main"><img src="images/55cnce_paper_plot.png" alt="" /></span>
-                                <p><b>We do not find evidence for iron in the atmosphere of lava planet 55 Cancri e, suggesting the presence of a thin mineral atmosphere.</b>
-                                <br>
-                                <i>A Non-Detection of Iron in the First High-Resolution Emission Study of the Lava Planet 55 Cnc e</i>
-                                <br>                                                                                                                                                       
-                                <a href="https://iopscience.iop.org/article/10.3847/1538-3881/acf28e"> Rasmussen and Currie et al. 2023</a></p>
-                                <hr>
-                                
+      <div class="paper">
+        <img src="/images/disk_example.png" alt="" />
+        <div>
+          <h3>Mitigating Worst-Case Exozodiacal Dust Structure</h3>
+          <div class="meta">Currie et al. 2023b · <i>The Astronomical Journal</i></div>
+          <p>We find that an optimized high-pass filter may be capable of fitting and removing mean-motion-resonance exozodiacal dust structures, including worst-case morphologies, that would otherwise obscure Earth-like exoplanets in direct images from future flagship missions. <a href="https://iopscience.iop.org/article/10.3847/1538-3881/acfda7">Paper →</a></p>
+        </div>
+      </div>
 
+      <div class="paper">
+        <img src="/images/55cnce_paper_plot.png" alt="" />
+        <div>
+          <h3>A Non-Detection of Iron at 55 Cancri e</h3>
+          <div class="meta">Rasmussen &amp; Currie et al. 2023 · <i>The Astronomical Journal</i></div>
+          <p>We report the first high-resolution emission study of the lava planet 55 Cancri e and find no evidence for iron in its atmosphere; this non-detection is consistent with the presence of a thin mineral atmosphere rather than a substantial silicate-vapor envelope. <a href="https://iopscience.iop.org/article/10.3847/1538-3881/acf28e">Paper →</a></p>
+        </div>
+      </div>
 
-							</article>
+    </div>
+    <a class="pub-link" href="https://orcid.org/0000-0003-3429-4142">Full publication list (ORCID) →</a>
+  </section>
 
-						<!-- Community -->
-						<!--<article id="community"> -->
-							<!--	<h2 class="major">Community</h2>-->
-                                <!--	<p><b>Science is not an individual pursuit.</b> Science can only happen when people work together to achieve a common goal, and over the years I have found ways to give back to my scientific community in this regard. </p>-->
-                                <!--	<p>Active service positions:<br>-->
-                                <!--	<b>Co-chair</b>, Science Communication Working Group for NASA’s Nexus for Exoplanet System Science <br>-->
-                                <!--	<b>Member</b>, ExoPAG’s Study Analysis Group 23: The Impact of Exo-Zodiacal Dust on Exoplanet Direct Imaging Surveys <br>-->
-								<!--	<p><b>You can find links to my <a href="https://nexss.info/newsletters/"> NExSS Newsletter designs here!</a></b></p>-->
-								<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
+  <!-- WRITING -->
+  <section id="writing">
+    <h2>Writing</h2>
+    <ul class="posts">
+      {% for post in site.posts limit: 5 %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+        {% if post.summary %}<p class="post-hook">{{ post.summary }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    <a class="see-all" href="/writing/">All posts →</a>
+  </section>
 
-							<!--	</article> -->
-							
+  <!-- OUTDOORS -->
+  <section id="outdoors" class="outdoors">
+    <h2>Outdoors</h2>
+    <p>When I'm not working, you can find me on (or off) the trails — mountaineering, trail running, the occasional alpine slog.</p>
+    <div class="outdoor-strip">
+      <img src="/images/miles_baker.jpeg" alt="Summit of Mt. Baker" />
+      <img src="/images/Mt_Ellinor.jpeg" alt="Winter summit of Mt. Ellinor" />
+      <img src="/images/miles_epic.JPG" alt="Mt. St. Helens" />
+      <img src="/images/Dirty_Turtle_2023_2.jpeg" alt="Trail race" />
+    </div>
+  </section>
 
-						<!-- Teaching -->
-							<article id="outdoors">
-								<h2 class="major">Outdoors</h2>
-								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
-
-                                <p>When I'm not doing science, you can find me on (or off) the trails!</p>
-                                <hr>
-                                <span class="image main"><img src="images/miles_baker.jpeg" alt="" /></span>
-                                At the summit of Mt. Baker after climbing all night. Worth it? Maybe.
-                                <hr> 
-								<span class="image main"><img src="images/Mt_Ellinor.jpeg" alt="" /></span>
-                                Friends celebrating a successful winter summit of Mt. Ellinor in the Olympic Mountains.
-                                <hr>
-								<span class="image main"><img src="images/miles_epic.JPG" alt="" /></span>
-                                Me slogging up Mt. St. Helens in the dead of winter (almost there!)
-                                <hr>
-                                <span class="image main"><img src="images/Dirty_Turtle_2023_2.jpeg" alt="" /></span>
-                                Looking way too happy for being several hours into a trail race.
-
-							</article>
-
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<p> <b>Email: mcurr@uw.edu</b> </p>
-<!--								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
--->
-								<ul class="icons">
-									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
-
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon fa-download">Icon</a></li>
-										<li><a href="#" class="button icon fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">Adapted from a template designed by <a href="https://html5up.net" target="blank">HTML5 UP</a>.
-                        <br>Background image credit: NASA Image Library s39-610-037</p>
-					</footer>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+</main>

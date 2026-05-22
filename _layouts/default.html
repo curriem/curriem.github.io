@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{% if page.title and page.url != "/" %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}" />
+<meta property="og:title" content="{% if page.title and page.url != '/' %}{{ page.title }} · {% endif %}{{ site.title }}" />
+<meta property="og:description" content="{{ page.description | default: site.description }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta name="twitter:card" content="summary" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css" />
+</head>
+<body>
+
+<nav class="top">
+  <div class="inner">
+    <a class="brand" href="/">Miles H. Currie</a>
+    <ul>
+      <li><a href="/#work">Work</a></li>
+      <li><a href="/#projects">Projects</a></li>
+      <li><a href="/#research">Research</a></li>
+      <li><a href="/writing/">Writing</a></li>
+      <li><a href="/images/cv.pdf">CV</a></li>
+    </ul>
+  </div>
+</nav>
+
+{{ content }}
+
+<footer>
+  <p>© Miles H. Currie · <a href="mailto:mileshcurrie@gmail.com">mileshcurrie@gmail.com</a> · <a href="https://github.com/curriem">GitHub</a> · <a href="https://www.linkedin.com/in/miles-currie-phd">LinkedIn</a></p>
+</footer>
+
+</body>
+</html>
