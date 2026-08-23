@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Currie;Miles;H.;;PhD
+FN:Miles H. Currie, PhD
+ORG:MyRadar
+TITLE:Satellite AI/ML Scientist
+EMAIL;TYPE=WORK:miles@myradar.com
+EMAIL;TYPE=HOME:mileshcurrie@gmail.com
+URL:https://milescurrie.com
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/miles-currie-phd
+X-SOCIALPROFILE;TYPE=github:https://github.com/curriem
+NOTE:Onboard AI/ML for smallsats — hazard detection with multi- and hyperspectral imaging.
+END:VCARD

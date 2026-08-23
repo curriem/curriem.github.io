@@ -231,6 +231,88 @@ article.post h1 {
   letter-spacing: -0.02em;
 }
 
+/* Card page */
+.card-page {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 48px 0 56px;
+  border-bottom: none;
+}
+.biz-card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 32px 28px;
+  text-align: center;
+}
+.biz-photo {
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  object-fit: cover; object-position: center;
+  margin-bottom: 16px;
+}
+.biz-card h1 { font-size: 24px; margin: 0 0 4px; font-weight: 700; }
+.biz-card .role { font-size: 15px; color: var(--ink-soft); margin: 0 0 12px; }
+.biz-card .role .at { color: var(--accent); font-weight: 500; }
+.biz-tagline {
+  font-size: 14px; color: var(--ink-soft);
+  margin: 0 0 20px;
+}
+.biz-contacts {
+  list-style: none; padding: 0; margin: 0 0 22px;
+  text-align: left;
+  border-top: 1px solid var(--rule);
+}
+.biz-contacts li {
+  display: flex; align-items: baseline; gap: 14px;
+  padding: 9px 2px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 14px;
+  min-width: 0;
+}
+.biz-contacts .label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; color: var(--ink-mute);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  flex: 0 0 64px;
+}
+.biz-contacts a {
+  color: var(--ink);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.biz-contacts a:hover { color: var(--accent); text-decoration: none; }
+.biz-actions { display: flex; gap: 10px; justify-content: center; }
+.biz-save, .biz-cv {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 14px; font-weight: 600;
+  transition: all 0.15s;
+}
+.biz-save { background: var(--accent); color: #fff; }
+.biz-save:hover { text-decoration: none; opacity: 0.9; }
+.biz-cv {
+  border: 1px solid var(--rule); color: var(--ink);
+  background: var(--surface);
+}
+.biz-cv:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.biz-org {
+  display: block;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--rule);
+  text-align: center;
+}
+.biz-org img { width: 130px; height: auto; opacity: 0.9; transition: opacity 0.15s; }
+.biz-org:hover img { opacity: 1; }
+.biz-qr { text-align: center; margin-top: 32px; }
+.biz-qr img { width: 140px; height: 140px; }
+.biz-qr p {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px; color: var(--ink-mute);
+  margin: 6px 0 0;
+}
+
 /* Footer */
 footer {
   border-top: 1px solid var(--rule);
